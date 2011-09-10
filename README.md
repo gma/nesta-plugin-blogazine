@@ -36,7 +36,7 @@ that should use one of your hand crafted designs. For example:
     Your blog post starts here...
 
 You can share common styles between designs using Sass's ability to import
-common other Sass files. At the top of `trees.sass` you could write:
+other Sass files. At the top of `trees.sass` you could write:
 
     @import "master"
 
