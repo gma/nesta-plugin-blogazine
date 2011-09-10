@@ -8,8 +8,12 @@ Gem::Specification.new do |s|
   s.authors     = ["Graham Ashton"]
   s.email       = ["graham@effectif.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Art directed blog support for Nesta}
+  s.description = <<-EOF
+Art directed blogs (or "blogazines") use a different design on every
+page. It's easy to implement with Nesta, but easier still if you install
+this plugin.
+  EOF
 
   s.rubyforge_project = "nesta-plugin-blogazine"
 
@@ -21,5 +25,4 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   s.add_dependency("nesta", ">= 0.9.10")
   s.add_development_dependency("rake")
-nt"
 end

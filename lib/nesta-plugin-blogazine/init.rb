@@ -2,9 +2,13 @@ module Nesta
   module Plugin
     module Blogazine
       module Helpers
-        helpers do
-          # If your plugin needs any helper methods, add them here...
-        end 
+        def page_design(default = 'master')
+          if @page && @page.metadata('design')
+            @page.metadata('design')
+          else
+            default
+          end
+        end
       end
     end
   end
