@@ -14,7 +14,9 @@ layout template to call the helper when serving your stylesheet:
 
 You can specify the name of a default stylesheet to use on pages that
 don't specify their own design. If you don't specify a default the
-plugin assumes that you want to render a stylesheet called 'master.css'.
+plugin assumes that you want to render a stylesheet called 'master.css',
+but you can override that by passing in the name of your default
+stylesheet:
 
     %link(href="/css/#{page_design('application')}.css" media="screen" rel="stylesheet")
 
@@ -34,8 +36,7 @@ that should use one of your hand crafted designs. For example:
     Your blog post starts here...
 
 You can share common styles between designs using Sass's ability to import
-common other Sass files. For example, at the top of `trees.sass` you
-could write:
+common other Sass files. At the top of `trees.sass` you could write:
 
     @import "master"
 
