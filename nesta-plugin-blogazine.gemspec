@@ -23,6 +23,6 @@ this plugin.
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  s.add_dependency("nesta", ">= 0.9.10")
+  s.add_dependency("nesta", ">= 0.9.11")
   s.add_development_dependency("rake")
 end
